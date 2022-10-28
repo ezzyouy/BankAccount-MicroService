@@ -1,6 +1,5 @@
 package org.sid.bankaccountservice.mappers;
 
-import org.sid.bankaccountservice.dto.BankAccounRequesttDTO;
 import org.sid.bankaccountservice.dto.BankAccountResponseDTO;
 import org.sid.bankaccountservice.entities.BankAcount;
 import org.springframework.beans.BeanUtils;

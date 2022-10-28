@@ -3,10 +3,7 @@ package org.sid.bankaccountservice.entities;
 import lombok.*;
 import org.sid.bankaccountservice.enums.AccountType;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -20,4 +17,6 @@ public class BankAcount {
     private String currency;
     @Enumerated(EnumType.STRING)
     private AccountType type;
+    @ManyToOne
+    private Customer customer;
 }
